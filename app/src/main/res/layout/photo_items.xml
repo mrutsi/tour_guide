@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/slipper"
+        android:background="@drawable/layoutstyle"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="wecome to polokwane city"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            />
+
+        <ImageView
+            android:id="@+id/imageIm"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/basilsfine_dining" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layoutstyle"
+        android:padding="2dp"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+           android:onClick="maps_"
+            android:tint="#7C4DFF"
+            android:src="@drawable/directions"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tint="#7C4DFF"/>
+        />
+
+        <ImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/share"
+            android:onClick="maps1_"
+            android:tint="#7C4DFF"/>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layoutstyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="information
+Fana is alarmed when he bumps into Detective Roberts. Lerato puts pressure on Lesedi about her
+ relationship. Jack has a plan on how to bring down his nemesis.
+Catch Generations the Legacy Mondays to Fridays at 20:00 on SABC 1. Watch the full
+episode here on YouTube, directly after the normal TV broadcast, at 20:30! Join us then!
+Set in the cutthroat world of media communications in the city of Johannesburg
+, Generations looks at the story of lovers, arch-rivals, cheaters, backstabbers
+ and some good people of Ezweni Communications, Mashaba Media and Siqalo Coart.
+A place where drama, suspense and intrigue are the name of the game when you're
+ up against enemies you don't even know you have. A place where people will stop
+  at nothing to get their lovers even if it means resorting to violence, seduction
+  and even murder.
+" android:textColor="#000" />
+    </ScrollView>
+</LinearLayout>

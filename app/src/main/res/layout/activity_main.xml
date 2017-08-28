@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#BDBDBD"
+        android:padding="2dp"
+        tools:context="com.example.android.map.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:id="@+id/pp"
+            android:src="@drawable/plk1"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/pp"
+            android:background="#BDBDBD"
+            android:layout_alignParentStart="true">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#BDBDBD"
+                android:orientation="vertical"
+                >
+
+
+                <Button
+                    android:id="@+id/hotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="hotels"
+                    android:textColor="#9E9E9E"
+                    android:background="@drawable/layoutstyle"
+                    android:text="hotels"/>
+
+                <Button
+                    android:id="@+id/resort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textColor="#9E9E9E"
+                    android:background="@drawable/layoutstyle"
+                    android:onClick="resort"
+                    android:text="resort"/>
+
+                <Button
+                    android:id="@+id/stadium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9E9E9E"
+                    android:layout_margin="8dp"
+                    android:onClick="stadium"
+                    android:background="@drawable/layoutstyle"
+                    android:text="stadium"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:background="#BDBDBD"
+                android:layout_width="0dp">
+
+
+                <Button
+                    android:id="@+id/flight"
+                    android:background="@drawable/layoutstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textColor="#9E9E9E"
+                    android:onClick="flight"
+                    android:text="flight"/>
+
+                <Button
+                    android:id="@+id/taxi"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/layoutstyle"
+                    android:layout_height="wrap_content"
+                    android:text="taxi"
+                    android:textColor="#9E9E9E"
+                    android:layout_margin="8dp"
+                    android:onClick="taxi"
+                    />
+
+                <Button
+                    android:id="@+id/entertainment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="entertainment"
+                    android:background="@drawable/layoutstyle"
+                    android:textColor="#9E9E9E"
+                    android:layout_margin="8dp"
+                    android:onClick="entertainment"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <AdapterViewFlipper
+            android:id="@+id/adapterView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            >
+        </AdapterViewFlipper>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="2dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:tint="#7C4DFF"
+                android:src="@drawable/home"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/cinema"
+                android:tint="#7C4DFF"/>
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/flight"
+                android:tint="#7C4DFF"/>
+            />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/shopping"
+                android:tint="#7C4DFF"/>
+        </LinearLayout>
+
+</RelativeLayout>
+
+
+
+    <!--  <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="map"
+          android:onClick="maps_"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent"/>
+  -->
+
